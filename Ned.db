@@ -1,0 +1,57 @@
+CREATE TABLE Students (
+id int,
+course varchar(255),
+name varchar(255),
+PRIMARY KEY (id)
+);
+
+INSERT INTO students(id,course,name)
+VALUES (1,'Usama','DS')
+
+INSERT INTO students(id,course)
+VALUES (2,'AI')
+
+INSERT INTO students
+VALUES (3,'DS','Khanani')
+
+INSERT INTO  students
+values 
+(4,'AI','MAlik'),
+(5,'CS','Shahid'),
+(6,'IT','Izham')
+
+UPDATE students 
+set
+course = 'AI'
+where 
+id = 2
+
+UPDATE students 
+set
+name = 'Arsalan'
+where 
+id = 2
+
+delete  from students 
+WHERE 
+id = 5
+
+alter TABLE students 
+add 
+Fee_Status varchar(255)
+
+UPDATE students 
+set
+Fee_Status = 'Paid'
+where 
+id = 1
+
+UPDATE students 
+set
+Fee_Status = 'UnPaid'
+where 
+id = 3
+
+SELECT COUNT(Fee_Status)
+FROM Students 
+WHERE id=1;
