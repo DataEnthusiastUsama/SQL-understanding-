@@ -1,3 +1,3 @@
 [Uploading Ned.db…]()
-# Practices-followed-by-sir-qasim
+# Tutorial 
 Sql Querry
